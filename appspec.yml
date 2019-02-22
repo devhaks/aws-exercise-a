@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /projects/aws-exercise-a
+    destination: /home/ubuntu/projects/aws-exercise-a
 hooks:
   AfterInstall:
     # - location: scripts/set_owner
