@@ -11,10 +11,10 @@ hooks:
     - location: scripts/install_dependencies
       timeout: 120
       runas: ubuntu
-  # ApplicationStart:
-  #   - location: scripts/restart_server
-  #     timeout: 10
-  #     runas: root
+  ApplicationStart:
+    - location: scripts/restart_server
+      timeout: 10
+      runas: ubuntu
   ValidateService: 
     - location: scripts/validate_server
       timeout: 30

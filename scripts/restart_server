@@ -2,4 +2,5 @@ echo '======================'
 echo 'Running restart_server'
 echo '======================'
 
-service nginx restart
+cd ~/projects/aws-exercise-a
+npm start
