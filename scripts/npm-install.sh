@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo '============================'
 echo 'Running install_dependencies'
 echo '============================'

@@ -8,12 +8,12 @@ hooks:
     # - location: scripts/set_owner
     #   timeout: 5
     #   runas: root
-    - location: scripts/install_dependencies
+    - location: scripts/npm-install.sh
       timeout: 120
-      runas: root
+      runas: ubuntu
   ApplicationStart:
-    - location: scripts/restart_server
-      timeout: 10
+    - location: scripts/npm-start.sh
+      timeout: 20
       runas: ubuntu
   # ValidateService: 
   #   - location: scripts/validate_server

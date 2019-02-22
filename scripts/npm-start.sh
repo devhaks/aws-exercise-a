@@ -1,5 +1,7 @@
+#!/bin/bash
+
 echo '======================'
-echo 'Running restart_server'
+echo 'Running start_server'
 echo '======================'
 
 cd /home/ubuntu/projects/aws-exercise-a
