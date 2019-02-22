@@ -4,5 +4,5 @@ echo '======================'
 echo 'Running start_server'
 echo '======================'
 
-cd /home/ubuntu/projects/
-npm start
+cd ~/projects/aws-exercise-a
+npm run pm2

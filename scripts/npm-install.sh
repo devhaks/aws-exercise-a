@@ -4,6 +4,6 @@ echo '============================'
 echo 'Running install_dependencies'
 echo '============================'
 
-cd ~/projects
+cd ~/projects/aws-exercise-a
 ls -al
 npm install

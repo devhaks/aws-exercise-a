@@ -2,19 +2,16 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: ~/projects
-# hooks:
-#   AfterInstall:
-#     # - location: scripts/set_owner
-#     #   timeout: 5
-#     #   runas: root
-#     - location: scripts/npm-install.sh
-#       timeout: 120
-#       runas: ubuntu
-#   ApplicationStart:
-#     - location: scripts/npm-start.sh
-#       timeout: 20
-#       runas: ubuntu
+    destination: ~/projects/aws-exercise-a
+hooks:
+  AfterInstall:
+    - location: scripts/npm-install.sh
+      timeout: 120
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/npm-start.sh
+      timeout: 20
+      runas: ubuntu
   # ValidateService: 
   #   - location: scripts/validate_server
   #     timeout: 30
