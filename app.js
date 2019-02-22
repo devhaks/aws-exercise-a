@@ -10,5 +10,5 @@ app.listen(3000, () => {
 });
 
 app.get('/health', (req, res) => {
-  res.status(200).send();
+  res.sendStatus(200);
 });

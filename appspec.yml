@@ -2,20 +2,20 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/aws-exercise-a
+    destination: /home/ubuntu/projects/aws-exercise-a
+
+# hook 설명
+# https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html
 hooks:
   AfterInstall:
-    - location: scripts/set_owner
-      timeout: 5
-      runas: root
-    - location: scripts/install_dependencies
+    - location: scripts/npm-install.sh
       timeout: 120
-      runas: ec2-user
+      runas: ubuntu
   ApplicationStart:
-    - location: scripts/restart_server
-      timeout: 10
-      runas: root
-  ValidateService: 
-    - location: scripts/validate_server
-      timeout: 30
-      runas: ec2-user
+    - location: scripts/npm-start.sh
+      timeout: 20
+      runas: ubuntu
+  # ValidateService: 
+  #   - location: scripts/validate_server
+  #     timeout: 30
+  #     runas: ubuntu
