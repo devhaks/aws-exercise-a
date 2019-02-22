@@ -4,6 +4,6 @@ echo '============================'
 echo 'Running install_dependencies'
 echo '============================'
 
-cd /home/ubuntu/projects/
+cd ~/projects
 ls -al
 npm install
