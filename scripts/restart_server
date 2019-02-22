@@ -2,5 +2,5 @@ echo '======================'
 echo 'Running restart_server'
 echo '======================'
 
-cd ~/projects/aws-exercise-a
+cd /home/ubuntu/projects/aws-exercise-a
 npm start
