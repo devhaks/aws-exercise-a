@@ -8,14 +8,17 @@ files:
 # https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html
 hooks:
   AfterInstall:
+    - location: scripts/set_owner.sh
+      timeout: 10
+      runas: root
     - location: scripts/npm-install.sh
       timeout: 120
       runas: ubuntu
   ApplicationStart:
     - location: scripts/npm-start.sh
-      timeout: 20
+      timeout: 10
       runas: ubuntu
-  # ValidateService: 
-  #   - location: scripts/validate_server
-  #     timeout: 30
-  #     runas: ubuntu
+  ValidateService: 
+    - location: scripts/validate_server.sh
+      timeout: 10
+      runas: ubuntu
