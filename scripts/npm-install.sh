@@ -4,6 +4,9 @@ echo '============================'
 echo 'Running install_dependencies'
 echo '============================'
 
-cd ~/projects/aws-exercise-a
-ls -al
+pwd
+cd ~/projects
+sudo chown -R ubuntu:ubuntu aws-exercise-a
+cd aws-exercise-a
+pwd
 npm install

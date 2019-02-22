@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "AWS exercise project A",
   "scripts": {
+    "preinstall": "sudo npm i -g pegjs pm2",
     "start": "node app.js",
     "pm2": "pm2 start app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
