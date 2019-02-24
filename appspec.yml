@@ -3,9 +3,6 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/projects/aws-exercise-a
-
-# hook 설명
-# https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html
 hooks:
   AfterInstall:
     - location: scripts/set_owner.sh
