@@ -5,4 +5,5 @@ echo 'Running start_server'
 echo '======================'
 
 cd /home/ubuntu/projects/aws-exercise-a
-npm run pm2
+pm2 kill
+pm2 start app.js
