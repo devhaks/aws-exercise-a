@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('CodeDeploy로 배포된 AWS exercise의 첫 번째 A project 버전입니다.');
+  res.send('CodeDeploy로 배포된 AWS exercise의 2 번째 A project 버전입니다.');
 });
 
 app.listen(port, () => {
