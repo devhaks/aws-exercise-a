@@ -13,7 +13,7 @@ hooks:
       runas: ubuntu
   ApplicationStart:
     - location: scripts/npm-start.sh
-      timeout: 10
+      timeout: 30
       runas: ubuntu
   ValidateService: 
     - location: scripts/validate_server.sh
