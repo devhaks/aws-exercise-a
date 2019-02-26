@@ -8,4 +8,4 @@ pwd
 cd /home/ubuntu/projects/aws-exercise-a
 pwd
 pm2 l
-pm2 restart app.js
+pm2 start app.js
